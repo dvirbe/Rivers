@@ -30,12 +30,7 @@ public class Main {
                 if (row.child(0).text().equals("Rank")) {
                     continue;
                 }
-                String name;
-                if (row.child(1).childrenSize() == 0) {
-                    name = row.child(1).text();
-                } else {
-                    name = row.child(1).child(0).text();
-                }
+                String  name = row.child(1).text();
 
                 String lengthMetric = row.child(2).text();
                 lengthMetric = getParsableNumber(lengthMetric);
