@@ -31,7 +31,6 @@ public class Main {
                     continue;
                 }
                 String name;
-                System.out.println(row.child(1).text());
                 if (row.child(1).childrenSize() == 0) {
                     name = row.child(1).text();
                 } else {
